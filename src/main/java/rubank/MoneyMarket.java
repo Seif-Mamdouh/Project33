@@ -70,14 +70,6 @@ public class MoneyMarket extends Savings{
     }
 
     /**
-     * Resets the value of withdrawals to 0 for use when an account is being closed.
-     */
-    public void withdrawalReset()
-    {
-        this.withdrawals = 0;
-    }
-
-    /**
      * Calculates the fee to be charged to a MoneyMarket Account.
      * @return The fee to be charged to the account.
      */

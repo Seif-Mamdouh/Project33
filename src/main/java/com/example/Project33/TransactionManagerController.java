@@ -251,17 +251,13 @@ public class TransactionManagerController {
 
         boolean closed = db.close(account);
 
-        boolean exists = db.isInDatabaseAlready(account);
-
-        if (!exists) {
+        if (!closed) {
             ocDisplayArea.setText("This account isn't in the database.");
             return;
         }
 
         ocDisplayArea.setText("Account ");
-        if (!closed) ocDisplayArea.appendText("is ");
         ocDisplayArea.appendText("closed");
-        if (!closed) ocDisplayArea.appendText(" already");
         ocDisplayArea.appendText(".");
     }
 
@@ -292,15 +288,9 @@ public class TransactionManagerController {
         Account account = createAccount(profile, amount, true);
 
         boolean exists = db.isInDatabaseAlready(account);
-        if (exists) {
-            if(db.checkStatus(account))
-            {
-                dwDisplayArea.setText("Cannot deposit into a closed account.");
-            }
-            else {
-                db.deposit(account);
-                dwDisplayArea.setText("Deposit - balance updated.");
-            }
+        if (exists) {  
+            db.deposit(account);
+            dwDisplayArea.setText("Deposit - balance updated.");
         } else {
             dwDisplayArea.setText(account.getHolder() + " " + account.getType() + " is not in the database.");
         }
@@ -334,18 +324,11 @@ public class TransactionManagerController {
 
         boolean exists = db.isInDatabaseAlready(account);
         if (exists) {
-            if(db.checkStatus(account))
-            {
-                dwDisplayArea.setText("Cannot withdrawal from a closed account.");
-            }
-            else
-            {
                 dwDisplayArea.setText("Withdraw - ");
                 boolean success = db.withdraw(account);
 
                 if (success) dwDisplayArea.appendText("balance updated.");
                 else dwDisplayArea.appendText("insufficient fund.");
-            }
         } else {
             dwDisplayArea.setText(account.getHolder() + " " + account.getType() + " is not in the database.");
         }
