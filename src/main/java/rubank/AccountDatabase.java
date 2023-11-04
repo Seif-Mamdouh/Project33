@@ -27,7 +27,7 @@ public class AccountDatabase {
     private rubank.Account[] accounts;
 
     /**
-     * Stores number of accounts in database including both open and closed accounts.
+     * Stores number of accounts in database including open accounts.
      */
     private int numAcct;
 
@@ -67,13 +67,13 @@ public class AccountDatabase {
     /**
      * Method to determine the status of an account in the database.
      * @param account instance of Account to check status of in database
-     * @return true if account is closed and false otherwise
+     * @return true if account is found and false otherwise
      */
     public boolean checkStatus(rubank.Account account) {
         int loc = find(account);
         if(loc >= 0)
         {
-            return accounts[loc].isClosed();
+            return true;
         }
         return false;
     }
@@ -82,7 +82,7 @@ public class AccountDatabase {
      * Used by BankTeller for determining whether account was in database already before opening
      * or closing.
      * @param account instance of Account to be looked up in database
-     * @return true if account in database whether closed or open, false otherwise
+     * @return true if account in database, false otherwise
      */
     public boolean isInDatabaseAlready(rubank.Account account) {
         return find(account) >= 0;
@@ -102,22 +102,17 @@ public class AccountDatabase {
     }
 
     /**
-     * Adds new account to accounts array, reopens if already existed but was closed,
-     * and does nothing if it already exists and is open in the accounts array.
+     * Adds new account to accounts array,
+     * and does nothing if it already exists in the accounts array.
      * @param account The information for an account to be opened in the database
-     * @return true if successfully opened/reopened, false otherwise
+     * @return true if successfully opened, false otherwise
      */
     public boolean open(rubank.Account account) {
         String accType = account.getType();
         for (int i = 0; i < numAcct; i++) {
             rubank.Account a = accounts[i];
             if (account.equals(a)) {
-                if (a.closed) {
-                    a.balance = account.balance;
-                    a.closed = false;
-                    reopen(a, account);
-                    return true;
-                } else return false;
+                return false;
             }
             if(account.holder.equals(a.holder))
             {
@@ -137,29 +132,6 @@ public class AccountDatabase {
     }
 
     /**
-     * Helper class that goes through the process of changing account information needed to reopen an account.
-     * @param a The information for a closed account in the database to be opened
-     * @param account The information of an Account the database needs to reopen
-     */
-    private void reopen(rubank.Account a, rubank.Account account)
-    {
-        a.balance = account.balance;
-        a.closed = false;
-        if(a instanceof Savings)
-        {
-            ((Savings) a).setLoyalty(((Savings) account).getLoyalty());
-        }
-        if(a instanceof MoneyMarket)
-        {
-            ((MoneyMarket) a).setLoyalty(true);
-        }
-        if(a instanceof CollegeChecking)
-        {
-            ((CollegeChecking) a).setCampusCode(((CollegeChecking) account).getCampusCode());
-        }
-    }
-
-    /**
      * Closes an account in the accounts array.
      * @param account The information for the account that is to be closed
      * @return true if closed a found account, false otherwise
@@ -167,21 +139,13 @@ public class AccountDatabase {
     public boolean close(rubank.Account account) {
         int accountIndex = find(account);
         if (accountIndex == NOT_FOUND) return false;
-
-        rubank.Account a = accounts[accountIndex];
-        if (!a.closed) {
-            a.balance = 0;
-            a.closed = true;
-            if (a instanceof Savings) {
-                ((Savings) a).setLoyalty(false);
-            }
-            if (a instanceof MoneyMarket) {
-                ((MoneyMarket) a).withdrawalReset();
-            }
-            return true;
+        while(accountIndex+1 < numAcct) {
+            accounts[accountIndex] = accounts[accountIndex+1];
+            accountIndex++;
         }
-
-        return false;
+        accounts[accountIndex] = null;
+        numAcct--;
+        return true;
     }
 
     /**
