@@ -1,32 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="278b7e0b-5c1a-459c-a828-09d6e62701a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Project33/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Project33/TransactionManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/AccountDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/Campus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/Checking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/CollegeChecking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/MoneyMarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rubank/Savings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/Project33/TM.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Specification.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/com/example/Project33/TransactionManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/com/example/Project33/TransactionManagerController.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/com/example/Project33/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/com/example/Project33/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/module-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/Account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/AccountDatabase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/Campus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/Checking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/CollegeChecking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/Date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/MoneyMarket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/Profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/Savings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/com.example.demo/rubank/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-22.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-24.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index-files/index-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/jquery-ui.overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/legal/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/legal/jquery.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/legal/jqueryUI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/Account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/AccountDatabase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/Campus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/Checking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/CollegeChecking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/Date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/MoneyMarket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/Profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/Savings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/rubank/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/script-dir/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/doc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubank/Campus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubank/Campus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,23 +105,45 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2Xcp6cbO23KvI5KbJQ7boRHyzo7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/seifmamdouh/Dropbox/My Mac (seifs-air.lan)/Desktop/Project33"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/seifmamdouh/Dropbox/My Mac (seifs-air.lan)/Desktop/Project33",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,5 +154,8 @@
       <updated>1698938049291</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

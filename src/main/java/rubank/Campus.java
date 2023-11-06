@@ -3,7 +3,7 @@ package rubank;
 /**
  * A class that represents Rutgers Campuses.
  *
- * @author Michael Muzafarov
+ * @author
  */
 public enum Campus {
     NEW_BRUNSWICK(0),
